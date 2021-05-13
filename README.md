@@ -94,7 +94,7 @@ O projeto é baseado em uma estrutura de armazenamentos em cache muito extensa, 
 } 
 ```
 
-Então para evitar um loop constante de requisição a toda vez que for carregado a página, foi construída uma estrutura de cache, onde não será feita mais requisições se já estiver armazenado a lista de pokemons. ex.:
+Então para evitar um loop constante de requisição a toda vez que for carregada a página, foi construída uma estrutura de cache, para que não seja feita mais requisições se já estiver armazenada a lista de pokemons. ex.:
 
 ```
   let res = await PokemonRequest.getPokemonsGeneral();
