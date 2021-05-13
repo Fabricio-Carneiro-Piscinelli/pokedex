@@ -1,72 +1,118 @@
-# Getting Started with Create React App
+**Pokédex**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto ReactJs para a listagem de pokémons utilizando a API: <http://pokeapi.co>
 
-## Available Scripts
+Neste projeto foi utilizado algumas bibliotecas de gerenciamento de rotas, estados, animações, cacheamento tais como.:
 
-In the project directory, you can run:
+- react-router-dom
+- node-sass
+- react-redux
+- axios
+- redux-persist
+- rsuite UI
+- typescript
+- lottie-react 
 
-### `npm start`
+**Estrutura:** 
+A estrutura do Pokédex é baseada em um estado global utilizando o redux e introduzindo uma forma de cacheamento para poupar requisições HTTP. Desta forma os dados são mantidos dentro da aplicação. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A estrutura do projeto é construída baseada na imagem abaixo: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![](https://uc6132b675cf2237691d35142ce9.previews.dropboxusercontent.com/p/thumb/ABJYQZ98pral11XDRBu328mSKEvhhrxQ_l8A4DlBUDIzQYRcWoERcne61iHljCCEVCei6qApqecS9eFvrn-beoiMWK8YWBKpJ9ct4AOzdEwbnvCdN1aFs1UoihDd13UlJaijbfCIocuNtRVHWW7VBKv55bSO9eCFd1DdgI_TxOfO8tuxzUIlq9E2jpdynJ5JIspWlvfTaoFTZtYJ--uf9eHjRy3oyawv7Uk0D-RBeijmgpxClSVJJwNmA8o2l8Oe7r4K2GJlG0VCaLVBNzpbJRV0vnocn2SBDzeRuBXlZJTV7V7_GAKhT51fKsRZf1DlC21HUU4tjHVsPt4RJ_7oPJOsEsvhc37ClSdf1WnbfbMCecw8OAkrhh-BVZdXv_J5XEDcuxYLKzs1qSSSGkG0Z-f4/p.png?fv_content=true&size_mode=5)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**1.1 Client**
+Aqui ficam todos os nossos itens "públicos" de acesso estático pelo app, tais como:
 
-### `npm run build`
+    1.1.1 sass
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    1.1.2 font
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    1.1.3 image
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    1.1.4 icons
 
-### `npm run eject`
+  **1.1.1 sass:** `Concentrado todos os nossos arquivos scss`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  **1.1.2 font:** `Concentra as fontes integradas a aplicação`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  **1.1.3 image:** `Concentra todas as imagens estáticas da aplicação`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  **1.1.4 icons:** `Concentra todos os icons estáticos da aplicação`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**1.2 Common**
+    Nesta pasta ficam os arquivos funcionais do projeto, tais como:
 
-## Learn More
+    1.2.1 actions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    1.2.2 components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    1.2.3 constants
 
-### Code Splitting
+    1.2.4 containers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    1.2.5 reducers
 
-### Analyzing the Bundle Size
+    1.2.6 route
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    1.2.7 selectors
 
-### Making a Progressive Web App
+    1.2.8 service-shared
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    1.2.9 store
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  **1.2.1 actions:** `Concentra todas as actions pertencentes ao redux` 
 
-### Deployment
+  **1.2.2 components:** `Concentra todos os **componets** da aplicação, tais como Page, header, Cards`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  **1.2.3 constants:** `Concentra todos as constantes do repositório Common` 
 
-### `npm run build` fails to minify
+  **1.2.4 containers:** `Concentra os containers de conexão com o redux`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  **1.2.5 reducers:** `Concentra todas os reducers pertencentes ao redux` 
 
-Figma: [https://www.figma.com/file/JfntdhmVjuVADDZXaJtXtq/Untitled?node-id=0%3A1](https://www.figma.com/file/JfntdhmVjuVADDZXaJtXtq/Untitled?node-id=0%3A1)
+  **1.2.6 route:** `Contra todas as rotas da aplicação`
+
+  **1.2.7 selectors:** `Concentra todos os arquivos de seleção de conteúdo do redux`
+
+  **1.2.8 service-shared:** `Concentra os arquivos de acesso a requisições http`
+
+  **1.2.9 store:** `create store de inicialização do redux`
+
+**Problemas:**
+
+O projeto é baseado em uma estrutura de armazenamentos em cache muito extensa, porque ele é **construído assim?**  A api <http://pokeapi.co/> não possui uma rota para listar uma estrutura de dados com titulo, id, imagem, ex.:
+
+
+
+``` 
+{
+  id,
+  name,
+  url_image
+} 
+```
+
+Então para evitar um loop constante de requisição a toda vez que for carregado a página, foi construída uma estrutura de cache, onde não será feita mais requisições se já estiver armazenado a lista de pokemons. ex.:
+
+```
+  let res = await PokemonRequest.getPokemonsGeneral();
+  let arrPokemon = [];
+
+  for (let item of res.results){
+    let pokemon = await PokemonRequest.getPokemonSingle(item.name);
+    arrPokemon.push(pokemon);
+  };
+
+dispatch(success(arrPokemon));
+```
+
+
+**Inicialização:** 
+
+1. `npm install`
+1. `npm start`  
+
+
+**Figma: [https://www.figma.com/file/JfntdhmVjuVADDZXaJtXtq/Untitled?node-id=0%3A1**](https://www.figma.com/file/JfntdhmVjuVADDZXaJtXtq/Untitled?node-id=0%3A1)**
