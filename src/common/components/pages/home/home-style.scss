@@ -1,0 +1,12 @@
+@import '../../../../client/sass/variables';
+
+.home {
+  &_content {
+    &-listing {
+      @include align;
+    }
+    &-listing > div{
+      @include align;
+    }
+  }
+}

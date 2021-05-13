@@ -1,0 +1,79 @@
+
+@import '../../../client/sass/variables';
+
+.card {
+  background-color: $white;
+  border-radius: 9px;
+  border: 1px solid $silver-clear;
+  margin: 10px;
+  transition-duration: 0.2s;
+
+  &__content {
+    &-header  {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    &-header > svg {
+      width: 20px;
+      height: 20px;
+    }
+    
+    &-image {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &-image > img {
+      width: 120px;
+      height: 120px;
+    }
+    &-footer {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &-name {
+        font-weight: 900;
+        color: $black;
+        text-transform: capitalize;
+      }
+      &-feature {
+        width: 46px;
+        height: 5px;
+        border-radius: 6px;
+        background-color: $yellow-primary;
+      }
+      &-line {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &-number_title > p {
+        font-weight: 500;
+        color: $black;
+        margin-right: 5px;
+      }
+
+      &-number_value {
+        width: 26px;
+        height: 26px;
+        border-radius: 26px;
+        background-color: $blue-primary;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      &-number_value > p {
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+
+  &:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 4px 50px 0px rgba($black,0.25);
+    -moz-box-shadow: 0px 4px 50px 0px rgba($black,0.25);
+    box-shadow: 0px 4px 50px 0px rgba($black,0.25);
+    transition-duration: 0.2s;
+  }
+}

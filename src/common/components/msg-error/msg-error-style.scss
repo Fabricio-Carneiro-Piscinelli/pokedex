@@ -1,0 +1,26 @@
+@import '../../../client/sass/variables';
+
+.error {
+  &-title {
+    text-align: center;
+    margin-top: 20px;
+    color: $red-error;
+    font-weight: 700;
+  }
+  &-try_again {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    border: 3px solid $blue-primary;
+    border-radius: 9px;
+    background-color: $white;
+    font-weight: 700;
+    color: $blue-primary;
+    font-size: 18px;
+  }
+}

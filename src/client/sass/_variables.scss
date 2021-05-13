@@ -1,0 +1,14 @@
+@mixin align {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+$blue-primary: #314C7D;
+$yellow-primary: #FECA1B;
+$red-error: #da2b2b;
+$white: #fff;
+$silver-clear: #DFDFDF;
+$black: #000;

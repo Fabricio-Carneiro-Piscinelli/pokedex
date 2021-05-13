@@ -1,0 +1,16 @@
+
+@import '../../../client/sass/variables';
+
+.header {
+  &__content {
+    &-logo {
+      @include align;
+      padding-top: 30px;
+      padding-bottom: 40px;
+      width: 100%;
+    }
+    &-logo > div > svg {
+      width: 100%;
+    }
+  }
+}

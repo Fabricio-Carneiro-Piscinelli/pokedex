@@ -1,0 +1,11 @@
+@import '../../../client/sass/variables';
+
+.loading {
+  width: 250px;
+  &-title {
+    text-align: center;
+    margin-top: -30px;
+    color: $blue-primary;
+    font-weight: 700;
+  }
+}

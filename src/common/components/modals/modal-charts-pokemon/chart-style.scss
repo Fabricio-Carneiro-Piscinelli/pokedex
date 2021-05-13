@@ -1,0 +1,38 @@
+@import '../../../../client/sass/variables';
+
+.modal-chart {
+  &__content {
+    &-title {
+      font-size: 22px;
+      font-weight: 900;
+      span {
+        text-transform: capitalize;
+      }
+      &-feature {
+        width: 70px;
+        height: 7px;
+        border-radius: 6px;
+        background-color: $yellow-primary;
+      }
+    }
+    &-bars {
+      display: flex;
+      margin-top: 10px;
+      &-name {
+        width: 120px;
+        font-weight: 700;
+      }
+      &-bar {
+        height: 30px;
+        background-color: $blue-primary
+      }
+      &-value {
+        align-items: center;
+        display: flex;
+        margin-left: 7px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
