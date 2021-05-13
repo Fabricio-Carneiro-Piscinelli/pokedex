@@ -2,7 +2,7 @@
 
 Projeto ReactJs para a listagem de pokémons utilizando a API: <http://pokeapi.co>
 
-Neste projeto foi utilizado algumas bibliotecas de gerenciamento de rotas, estados, animações, cacheamento tais como.:
+Neste projeto foram utilizadas algumas bibliotecas de gerenciamento de rotas, estados, animações, cacheamento tais como.:
 
 - react-router-dom
 - node-sass
@@ -94,7 +94,7 @@ O projeto é baseado em uma estrutura de armazenamentos em cache muito extensa, 
 } 
 ```
 
-Então para evitar um loop constante de requisição a toda vez que for carregada a página, foi construída uma estrutura de cache, para que não seja feita mais requisições se já estiver armazenada a lista de pokemons. ex.:
+Então para evitar um loop constante de requisição a toda vez que for carregada a página, foi construída uma estrutura de cache, para que não sejam mais feitas requisições se já estiver armazenada a lista de pokemons. ex.:
 
 ```
   let res = await PokemonRequest.getPokemonsGeneral();
