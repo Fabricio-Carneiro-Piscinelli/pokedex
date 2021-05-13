@@ -38,7 +38,7 @@ const Home = (props) => {
   useEffect(() => {
     if (pokemon?.response?.length)
       setPokemonData(pokemon.response);
-  }, [props]);
+  }, [pokemon]);
   
   return (
     <div>

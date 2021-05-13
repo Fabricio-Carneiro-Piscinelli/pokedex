@@ -12,7 +12,7 @@ const INITIAL_STATE = {
     response: {}
 };
 
-export default (state = INITIAL_STATE, action) => {
+const reducerGetPokemon = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case GET_ACTION_SUCCESS:
             return {
@@ -38,3 +38,4 @@ export default (state = INITIAL_STATE, action) => {
     }
 };
 
+export default reducerGetPokemon;

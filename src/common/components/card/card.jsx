@@ -25,7 +25,7 @@ const Card = (props) => {
         </Row>
         <Row>
           <Col xs={24} className="card__content-image">
-            <img src={urlImage} alt="image pokemon"/>
+            <img src={urlImage} alt={`pokemon ${title}`}/>
           </Col>
         </Row>
         <Row className="card__content-footer">
