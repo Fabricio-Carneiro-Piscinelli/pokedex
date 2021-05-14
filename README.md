@@ -18,7 +18,7 @@ A estrutura do Pokédex é baseada em um estado global utilizando o redux e intr
 
 A estrutura do projeto é construída baseada na imagem abaixo: 
 
-![](https://previews.dropbox.com/p/thumb/ABJUHbMnOFp-erq2bSWUFFNAbywiVPD2xDxqSNNz2s35QS_Y9lebvwclr-nLcoZMfbVTP8u3aojxvxIcWt6teJu2xNIxZep9uw6z4KQmmUW9w479VaGSZ6EKHoDzDjAMMWQxKpzrRZAa9rqcm717A6HbbPZ8dFHuc_O-HNimirenAf3OC9CCOjGyqrnMQxShMei1PdxZACxeWoO0r_pWkfic-F0d4Rdzc4rrnGvRH9XmQqti2z9BX4rXOrcJLokqaB7g27sx485otaY3m0nKoNowYid2DiH6CYVrbxgVnxDfIdpoLijQWuiInMzupHpGd8mfr5FWrZACjyhQz11ZPK3wMPVg7fpz-fiGS558E11N1Q/p.png?fv_content=true&size_mode=5)
+![](https://www.dropbox.com/home?preview=Capturar.PNG)
 
 
 **1.1 Client**
